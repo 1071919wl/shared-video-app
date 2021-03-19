@@ -1,0 +1,29 @@
+import React from "react";
+import {Route, Redirect, Switch, Link, HashRouter} from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import LoginFormContainer from './session_form/login_form_container';
+import SignupFormContainer from './session_form/signup_form_container';
+import Clip from './clip/clip'
+import Account from './account/account'
+import ClipItem from './clip/clip_item'
+
+
+const App = () => {
+
+
+    return (
+        <div>
+            <Switch>
+                <AuthRoute path="/login" component={LoginFormContainer} />
+                <AuthRoute path="/signup" component={SignupFormContainer} />
+                <ProtectedRoute exact path="/clip" component={Clip}/>
+                <ProtectedRoute exact path="/clip/:id" component={ClipItem}/>
+                <ProtectedRoute exact path="/Account" component={Account}/>
+            </Switch>
+        </div>
+    )
+
+};
+
+export default App;
+
