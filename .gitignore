@@ -4,3 +4,6 @@ bundle.js
 bundle.js.map
 
 /node_modules
+
+/config/pusher.config.js
+/config/initializers/pusher.rb
