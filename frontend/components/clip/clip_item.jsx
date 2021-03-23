@@ -3,7 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchClip, fetchClips } from '../../actions/clip_actions';
 import ReactPlayer from 'react-player';
 // import { usePusher } from "../PusherContext";
-import {postClip} from '../../actions/clip_actions'
+// import {postClip} from '../../actions/clip_actions'
+import {postPusher} from '../../actions/pusher_actions'
 
 
 const ClipItem = (props) => {
@@ -14,6 +15,8 @@ const ClipItem = (props) => {
     const player = useRef();
     // const pusher = usePusher();
 
+    const [channel, setChannel]= useState(null)
+
 
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
     const dispatch = useDispatch();
@@ -23,75 +26,83 @@ const ClipItem = (props) => {
         dispatch(fetchClip(props.match.params.id))
     }, [])
 
+
+    //subscribing
     useEffect(() => {
-        function childEventCallback(data) {
-            const newElapsed = data.payload;
-            setTest(newElapsed);
-        }
+        // function childEventCallback(data) {
+        //     const newElapsed = data.payload;
+        //     setTest(newElapsed);
+        // }
 
         Pusher.logToConsole = true;
 
         var pusher = new Pusher('4efa8992028154c12bf1', {
-        cluster: 'us3'
+            cluster: 'us3',
+            // authEndpoint: '/your_auth_endpoint'
+            authEndpoint: '/api/pusher/auth',
+            encrypted: true,
+            auth: {
+                headers: {
+                'X-CSRF-Token': "<%= form_authenticity_token %>"
+                }
+            }
         });
 
-        const channel = pusher.subscribe("my-channel-will");
-        channel.bind("my-event-will", childEventCallback);
+        //!good
+        // var pusher = new Pusher('4efa8992028154c12bf1', {
+        // cluster: 'us3'
+        // });
+        // const channel = pusher.subscribe("my-channel-will");
+        // channel.bind("my-event-will", childEventCallback);
 
-        return () => {
-            channel.unbind("client-someeventname", childEventCallback);
-        };
+        // return () => {
+        //     channel.unbind("client-someeventname", childEventCallback);
+        // };
+        //!good
+
+        var socketId = null;
+        let cred = {
+            channel_name: "private-my-channel-will",
+            socket_id: socketId
+        }
+        //gets socketid variable
+        pusher.connection.bind('connected', function() {
+            socketId = pusher.connection.socket_id;
+            // dispatch(postPusher(cred))
+        })
+
+        const channel = pusher.subscribe("private-my-channel-will");
+        setChannel(channel)
+
+        channel.bind('pusher:subscription_succeeded', function() {
+            alert("ahora siiii");
+        });
+        // channel.bind('pusher:subscription_succeeded', function() {
+        //     channel.trigger('client-my-event', (data) => alert(data.message));
+        // });
+        // channel.bind('client-my-event', () => alert('useeffect') )
+
     }, []);
 
-    //!TRACKS CURRENT TIME STAMP
+
     const trigger = () => {
-        // setTest(test => test+100);
-        // var pusher = new Pusher('4efa8992028154c12bf1', {
-        //     cluster: 'us3'
-        // });
-        // var channel = pusher.subscribe("my-channel-will");
-        // channel.bind('my-event-will', function() {
-        //     var triggered = channel.trigger('my-event-will', test);
-        //     console.log("WORKED?!")
-        //     setTest(triggered)
-        // });
-
-
-        // var channel = pusher.subscribe('private-channel');
+        console.log(channel)
+    
         // channel.bind('pusher:subscription_succeeded', function() {
-        //     var triggered = channel.trigger('client-someeventname', test);
-        //     console.log("WORKED?!")
-        //     setTest(triggered)
+            channel.trigger('client-my-event', () => alert('trigger'));
         // });
 
-
-        const formData = new FormData();
-        formData.append('clip[title]', 'test');
-        formData.append('clip[video_clip]', 'test')
-        formData.append('clip[user_id]', 'test')
-
-        dispatch(postClip(formData))
+                //! Logic which will then trigger events to a channel
+        // function trigger(){
+        // ...
+        // ...
+        // pusher.trigger('my-channel', 'my-event', {"message": "hello world"});
+        // ...
+        // ...
+        // }
+                //! Logic which will then trigger events to a channel
 
     }
-    // useEffect(() => {
-    //     console.log('REF',player.current?.getCurrentTime())
-    //     // console.log('SEEKTO',player.current.seekTo(60.296119))
-    // }, [secondsElapsed])
-
-    // const onDuration = (duration) =>{
-    //     setDuration(duration);
-    // }
-
-    // const onProgress = (progress) =>{
-    //     if (!duration) {
-    //         return;
-    //     }
-    //     const secondElapsed = progress.played * duration
-    //     if (secondsElapsed !== secondElapsed) {
-    //         setSecondsElapsed(secondElapsed)
-    //     }
-    // }
-    //!TRACKS CURRENT TIME STAMP
     
 
     // useEffect(() => {
@@ -125,7 +136,26 @@ const ClipItem = (props) => {
 
 
    
+    //!TRACKS CURRENT TIME STAMP
+    // useEffect(() => {
+    //     console.log('REF',player.current?.getCurrentTime())
+    //     // console.log('SEEKTO',player.current.seekTo(60.296119))
+    // }, [secondsElapsed])
 
+    // const onDuration = (duration) =>{
+    //     setDuration(duration);
+    // }
+
+    // const onProgress = (progress) =>{
+    //     if (!duration) {
+    //         return;
+    //     }
+    //     const secondElapsed = progress.played * duration
+    //     if (secondsElapsed !== secondElapsed) {
+    //         setSecondsElapsed(secondElapsed)
+    //     }
+    // }
+    //!TRACKS CURRENT TIME STAMP
 
     return (
         <div>
@@ -137,14 +167,14 @@ const ClipItem = (props) => {
                         <h1>{clip.title}</h1>
                         {/* <video type="video/mp4" src={clip.video_clip} width="800" height="auto" controls/> */}
                         {/* <ReactPlayer url={clip.video_clip} controls={true} ref={player} onDuration={onDuration} onProgress={onProgress}/> */}
-                        <ReactPlayer url={clip.video_clip} controls={true} ref={player} />
+                        <ReactPlayer url={clip.video_clip} controls={true} ref={player}  />
                     </div>
                     {/* <form onSubmit={sendMessage}>
                         <input type='text' onChange={e => setInput(e.target.value)}/>
                         <button type='submit' >submit</button>
                     </form> */}
                     {/* <button type='submit' onClick={()=>setTest(test => test+1)}>ADD</button> */}
-                    <button type='submit' onClick={()=>trigger()}>ADD</button>
+                    <button type='submit' onClick={()=>trigger()}>Alert</button>
                 </div>
             :
                 <div>Nope</div>

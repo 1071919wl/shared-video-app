@@ -4,10 +4,10 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       resource :session, only: [:create, :destroy]
       
-      # resources :helloworld, only: [:create]
+      # resources :pusher, only: [:create]
 
       resources :clips, only: [:show, :index, :create]
-      
+      post '/pusher/auth'
     end
   
     root "static_pages#root"
