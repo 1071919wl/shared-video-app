@@ -4,7 +4,6 @@ import { fetchClip, fetchClips } from '../../actions/clip_actions';
 import ReactPlayer from 'react-player';
 // import { usePusher } from "../PusherContext";
 // import {postClip} from '../../actions/clip_actions'
-import {postPusher} from '../../actions/pusher_actions'
 
 
 const ClipItem = (props) => {
@@ -12,15 +11,13 @@ const ClipItem = (props) => {
     const [input, setInput] = useState('')
     const [duration, setDuration] = useState(null)
     const [secondsElapsed, setSecondsElapsed] = useState(null)
+    const [channelState, setChannelState]= useState(null);
+    const [info, setInfo]= useState('');
     const player = useRef();
-    // const pusher = usePusher();
-
-    const [channel, setChannel]= useState(null)
-    const [socketId, setSocketId]= useState('')
+    const socketId = useRef();
 
 
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
-    const USER_ID = useSelector(state => state.entities.users.id);
     const dispatch = useDispatch();
     
     //componentdidmount
@@ -43,11 +40,11 @@ const ClipItem = (props) => {
             // authEndpoint: '/your_auth_endpoint'
             authEndpoint: '/pusher/auth',
             encrypted: true,
-            auth: {
-                headers: {
-                'X-CSRF-Token': "<%= form_authenticity_token %>"
-                }
-            }
+            // auth: {
+            //     headers: {
+            //     'X-CSRF-Token': "<%= form_authenticity_token %>"
+            //     }
+            // }
         });
 
         //!good
@@ -62,71 +59,38 @@ const ClipItem = (props) => {
         // };
         //!good
 
-        // let cred = {
-        //     channel_name: "private-my-channel-will",
-        //     socket_id: socketId
-        // }
-
         //gets socketid variable
         pusher.connection.bind('connected', function() {
-            let socketId = pusher.connection.socket_id;
-            setSocketId(socketId)
-            // dispatch(postPusher(cred))
+            let socket = pusher.connection.socket_id;
+            socketId.current = socket
         })
 
         const channel = pusher.subscribe("private-my-channel-will");
-        setChannel(channel)
-
-        channel.bind('pusher:subscription_succeeded', function() {
+        setChannelState(channel)
+        channel.bind('pusher:subscription_succeeded', () => {
             var triggered = channel.trigger('client-my-event', { message: 'CLIENT HAS JOINED' });
         });
 
-        // channel.trigger('client-my-event', ()=>{
-        //     console.log('trigger')
-        // })
+        channel.bind('client-seek', (data) => {
+            setInfo(data.timestamp);
+        }
+    );
 
-        // channel.bind('pusher:subscription_succeeded', function() {
-            // channel.trigger('client-my-event', () => alert('JUST BINDED'));
-        // });
-
+        return () => {
+            channel.unbind();
+            // pusher.unsubscribe(channel)
+            // pusher.disconnect()
+        };
     }, []);
+
+    useEffect(() => {
+        setTest(test => test + 10)
+    }, [info])
 
 
     const trigger = () => {
-        channel.trigger('client-my-event', { message: 'hello world' })
-
+        channelState.trigger('client-seek', { timestamp: 21 })
     }
-    
-
-    // useEffect(() => {
-        // Pusher.logToConsole = true;
-
-        // var pusher = new Pusher('4efa8992028154c12bf1', {
-        // cluster: 'us3'
-        // });
-
-        // var channel = pusher.subscribe('my-channel-will');
-
-        // pusher.connection.bind('state_change', function(test) {
-        // states = {previous: 'oldState', current: 'newState'}
-        // console.log('STATE',test)
-        // });
-
-        // channel.bind('my-event-will', function(data) {
-        //     console.log('MY EVENT WILL?!#################', data)
-        //     alert(JSON.stringify(data));
-        // });
-        
-        // pusher.bind('my-event-will', function(){
-        //     setTest(test => test + 1)
-        //     console.log('MY EVENT BILLIAM?!#################')
-        // });
-
-        // channel.bind('my-event-will', function (data) {
-        //     console.log('subscribed',data)
-        // });
-    // }, [test])
-
 
    
     //!TRACKS CURRENT TIME STAMP
