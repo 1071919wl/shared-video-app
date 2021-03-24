@@ -1,5 +1,5 @@
-class Api::ClipsController < ApplicationController
 
+class Api::ClipsController < ApplicationController
 
     def index
         @clips = Clip.all
@@ -7,6 +7,13 @@ class Api::ClipsController < ApplicationController
     end
 
     def create
+        # pusher = Pusher::Client.new(
+        #     app_id: '1174180',
+        #     key: '4efa8992028154c12bf1',
+        #     secret: '549f1209e1dc27c33bb5',
+        #     cluster: 'us3'
+        # )
+        # pusher.trigger('my-channel-will', 'my-event-will', {:message => 'Hello from clips_controller'})
         clip = Clip.new(clip_params)
         if clip.save
             render json: ["File uploaded!"]
@@ -19,8 +26,6 @@ class Api::ClipsController < ApplicationController
         @clip = Clip.find(params[:id])
         render :show 
     end
-
-
 
     def clip_params
         params.require(:clip).permit(:user_id, :title, :video_clip)

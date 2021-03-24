@@ -1,21 +1,36 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchClip, fetchClips } from '../../actions/clip_actions';
+import { fetchClips } from '../../actions/clip_actions';
 
 
 const Clip = () => {
 
+    const dispatch = useDispatch();
+    const allClips = useSelector(state => state.entities.clips);
     
     useEffect(() => {
         dispatch(fetchClips())
+        console.log(allClips)
     }, [])
-    // const allClips = useSelector(state => state.entities.clips);
     // const currentUser = useSelector(state => state.session.user);
-    const dispatch = useDispatch();
 
     return (
         <div>
-            Clip Index
+            {Array.isArray(allClips) ?
+                <div>
+                    Clip Index
+                    {allClips.map((clip) => (
+                        <div key={clip.id}>
+                            {clip.title}
+                            <div key={clip.id}>
+                                <video type="video/mp4" src={clip.video_clip} width="400" height="auto" controls/>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            :
+                <div>fal</div>                
+            }
         </div>
     )
 }
