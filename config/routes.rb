@@ -7,8 +7,8 @@ Rails.application.routes.draw do
       # resources :pusher, only: [:create]
 
       resources :clips, only: [:show, :index, :create]
-      post '/pusher/auth'
     end
+    post '/pusher/auth'
   
     root "static_pages#root"
 end

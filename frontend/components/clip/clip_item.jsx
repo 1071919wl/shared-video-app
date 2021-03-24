@@ -16,9 +16,11 @@ const ClipItem = (props) => {
     // const pusher = usePusher();
 
     const [channel, setChannel]= useState(null)
+    const [socketId, setSocketId]= useState('')
 
 
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
+    const USER_ID = useSelector(state => state.entities.users.id);
     const dispatch = useDispatch();
     
     //componentdidmount
@@ -39,7 +41,7 @@ const ClipItem = (props) => {
         var pusher = new Pusher('4efa8992028154c12bf1', {
             cluster: 'us3',
             // authEndpoint: '/your_auth_endpoint'
-            authEndpoint: '/api/pusher/auth',
+            authEndpoint: '/pusher/auth',
             encrypted: true,
             auth: {
                 headers: {
@@ -60,14 +62,15 @@ const ClipItem = (props) => {
         // };
         //!good
 
-        var socketId = null;
-        let cred = {
-            channel_name: "private-my-channel-will",
-            socket_id: socketId
-        }
+        // let cred = {
+        //     channel_name: "private-my-channel-will",
+        //     socket_id: socketId
+        // }
+
         //gets socketid variable
         pusher.connection.bind('connected', function() {
-            socketId = pusher.connection.socket_id;
+            let socketId = pusher.connection.socket_id;
+            setSocketId(socketId)
             // dispatch(postPusher(cred))
         })
 
@@ -75,32 +78,22 @@ const ClipItem = (props) => {
         setChannel(channel)
 
         channel.bind('pusher:subscription_succeeded', function() {
-            alert("ahora siiii");
+            var triggered = channel.trigger('client-my-event', { message: 'CLIENT HAS JOINED' });
         });
+
+        // channel.trigger('client-my-event', ()=>{
+        //     console.log('trigger')
+        // })
+
         // channel.bind('pusher:subscription_succeeded', function() {
-        //     channel.trigger('client-my-event', (data) => alert(data.message));
+            // channel.trigger('client-my-event', () => alert('JUST BINDED'));
         // });
-        // channel.bind('client-my-event', () => alert('useeffect') )
 
     }, []);
 
 
     const trigger = () => {
-        console.log(channel)
-    
-        // channel.bind('pusher:subscription_succeeded', function() {
-            channel.trigger('client-my-event', () => alert('trigger'));
-        // });
-
-                //! Logic which will then trigger events to a channel
-        // function trigger(){
-        // ...
-        // ...
-        // pusher.trigger('my-channel', 'my-event', {"message": "hello world"});
-        // ...
-        // ...
-        // }
-                //! Logic which will then trigger events to a channel
+        channel.trigger('client-my-event', { message: 'hello world' })
 
     }
     

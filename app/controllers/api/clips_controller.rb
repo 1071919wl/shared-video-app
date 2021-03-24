@@ -1,4 +1,3 @@
-require 'pusher'
 
 class Api::ClipsController < ApplicationController
 
