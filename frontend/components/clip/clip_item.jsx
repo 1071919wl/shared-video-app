@@ -37,7 +37,6 @@ const ClipItem = (props) => {
 
         var pusher = new Pusher('4efa8992028154c12bf1', {
             cluster: 'us3',
-            // authEndpoint: '/your_auth_endpoint'
             authEndpoint: '/pusher/auth',
             encrypted: true,
             // auth: {
@@ -46,18 +45,6 @@ const ClipItem = (props) => {
             //     }
             // }
         });
-
-        //!good
-        // var pusher = new Pusher('4efa8992028154c12bf1', {
-        // cluster: 'us3'
-        // });
-        // const channel = pusher.subscribe("my-channel-will");
-        // channel.bind("my-event-will", childEventCallback);
-
-        // return () => {
-        //     channel.unbind("client-someeventname", childEventCallback);
-        // };
-        //!good
 
         //gets socketid variable
         pusher.connection.bind('connected', function() {
