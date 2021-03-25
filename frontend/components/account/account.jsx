@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Clip from '../clip/clip'
-import {postClip} from '../../actions/clip_actions'
+import {postClip} from '../../actions/clip_actions';
+import NavBar from '../nav/navbar';
 
 
 const Account = () => {
@@ -34,6 +35,7 @@ const Account = () => {
 
     return (
         <div>
+            <NavBar />
             Account page
             <form onSubmit={handleSubmit}>
                 <label>Video title:

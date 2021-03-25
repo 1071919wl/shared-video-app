@@ -18,13 +18,9 @@ const App = () => {
             <Switch>
                 <AuthRoute path="/login" component={LoginFormContainer} />
                 <AuthRoute path="/signup" component={SignupFormContainer} />
-                {/* <PusherProvider pusher={pusher}> */}
-                    <ProtectedRoute exact path="/clip" component={Clip}/>
-                    {/* <ProtectedRoute exact path="/clip/:id" component={ClipItem}/> */}
-                    <Route exact path="/clip/:id" component={ClipItem}/>
-
-                    <ProtectedRoute exact path="/Account" component={Account}/>
-                {/* </PusherProvider> */}
+                <ProtectedRoute exact path="/clip" component={Clip}/>
+                <ProtectedRoute exact path="/clip/:id" component={ClipItem}/>
+                <ProtectedRoute exact path="/Account" component={Account}/>
             </Switch>
         </div>
     )

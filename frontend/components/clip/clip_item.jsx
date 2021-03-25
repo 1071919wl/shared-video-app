@@ -4,6 +4,7 @@ import { fetchClip } from '../../actions/clip_actions';
 import ReactPlayer from 'react-player';
 import { Direction } from 'react-player-controls';
 import ProgressBar from './progress_bar'
+import NavBar from '../nav/navbar';
 
 
 const ClipItem = (props) => {
@@ -123,6 +124,7 @@ const ClipItem = (props) => {
 
     return (
         <div>
+            <NavBar />
             {clip !== undefined ?
                 <div>
                     Clip Item Show
