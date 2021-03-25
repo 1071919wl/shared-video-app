@@ -1,20 +1,21 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchClip, fetchClips } from '../../actions/clip_actions';
+import { fetchClip } from '../../actions/clip_actions';
 import ReactPlayer from 'react-player';
-// import { usePusher } from "../PusherContext";
-// import {postClip} from '../../actions/clip_actions'
+import { Direction } from 'react-player-controls';
+import ProgressBar from './progress_bar'
 
 
 const ClipItem = (props) => {
-    const [test, setTest] = useState(0)
-    const [input, setInput] = useState('')
-    const [duration, setDuration] = useState(null)
-    const [secondsElapsed, setSecondsElapsed] = useState(null)
+    const [connect, setConnect] = useState('Waiting for party to connect...')
     const [channelState, setChannelState]= useState(null);
-    const [info, setInfo]= useState('');
+    const [playing, setPlaying]= useState(false);
+    const [progressState, setProgressState]= useState(0);
     const player = useRef();
+    const playedProgress = useRef(0);
+    const vidDuration = useRef(0);
     const socketId = useRef();
+
 
 
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
@@ -28,10 +29,6 @@ const ClipItem = (props) => {
 
     //subscribing
     useEffect(() => {
-        // function childEventCallback(data) {
-        //     const newElapsed = data.payload;
-        //     setTest(newElapsed);
-        // }
 
         Pusher.logToConsole = true;
 
@@ -52,73 +49,101 @@ const ClipItem = (props) => {
             socketId.current = socket
         })
 
+        //client side will get auth then stores channel in state
         const channel = pusher.subscribe("private-my-channel-will");
         setChannelState(channel)
-        channel.bind('pusher:subscription_succeeded', () => {
-            var triggered = channel.trigger('client-my-event', { message: 'CLIENT HAS JOINED' });
+
+        //confirms connection
+        // channel.bind('pusher:subscription_succeeded', () => {
+        //     var triggered = channel.trigger('client-my-event', { message: 'CLIENT HAS JOINED' });
+        // });
+
+        //event listener
+        channel.bind('client-player', (data) => {
+            if(data.play !== undefined){
+                setPlaying(data.play)
+            }
+        });
+        channel.bind('client-pause', (data) => {
+            if(data.play !== undefined){
+                setPlaying(data.play)
+            }
+        });
+        
+        channel.bind('client-ready', (data) => {
+            setConnect(data.connect);
         });
 
         channel.bind('client-seek', (data) => {
-            setInfo(data.timestamp);
-        }
-    );
+            player.current.seekTo(data.seek)
+        });
 
         return () => {
             channel.unbind();
-            // pusher.unsubscribe(channel)
-            // pusher.disconnect()
+            pusher.unsubscribe(channel)
+            pusher.disconnect()
         };
     }, []);
 
-    useEffect(() => {
-        setTest(test => test + 10)
-    }, [info])
 
 
     const trigger = () => {
-        channelState.trigger('client-seek', { timestamp: 21 })
+        channelState.trigger('client-ready', { connect: 'Party is Ready!' })
     }
 
-   
-    //!TRACKS CURRENT TIME STAMP
-    // useEffect(() => {
-    //     console.log('REF',player.current?.getCurrentTime())
-    //     // console.log('SEEKTO',player.current.seekTo(60.296119))
-    // }, [secondsElapsed])
+    const playPause = () => {
+        if(playing === true){
+            channelState.trigger('client-player', { play: false })
+            setPlaying(false)
+        }else{
+            channelState.trigger('client-player', { play: true })
+            setPlaying(true)
+        }
+    }
 
-    // const onDuration = (duration) =>{
-    //     setDuration(duration);
-    // }
 
-    // const onProgress = (progress) =>{
-    //     if (!duration) {
-    //         return;
-    //     }
-    //     const secondElapsed = progress.played * duration
-    //     if (secondsElapsed !== secondElapsed) {
-    //         setSecondsElapsed(secondElapsed)
-    //     }
-    // }
-    //!TRACKS CURRENT TIME STAMP
+    const onSeek = (onSeek) => {
+        if( onSeek >= playedProgress.current + 1 || onSeek <= playedProgress.current - 1){
+            channelState.trigger('client-seek', { seek: onSeek })
+        }
+    }
+
+    const onProgress = (progress) =>{
+        playedProgress.current = progress.playedSeconds
+        setProgressState(progress.playedSeconds)
+    }
+
+    const onDuration = (onDuration)=>{
+        vidDuration.current=onDuration
+
+    }
+    
+
+
 
     return (
         <div>
             {clip !== undefined ?
                 <div>
                     Clip Item Show
-                    {test}
+                    {connect}
                     <div>
                         <h1>{clip.title}</h1>
-                        {/* <video type="video/mp4" src={clip.video_clip} width="800" height="auto" controls/> */}
-                        {/* <ReactPlayer url={clip.video_clip} controls={true} ref={player} onDuration={onDuration} onProgress={onProgress}/> */}
-                        <ReactPlayer url={clip.video_clip} controls={true} ref={player}  />
+                        <ReactPlayer url={clip.video_clip} ref={player} onProgress={onProgress} onDuration={onDuration} playing={playing} onSeek={onSeek}  />
                     </div>
-                    {/* <form onSubmit={sendMessage}>
-                        <input type='text' onChange={e => setInput(e.target.value)}/>
-                        <button type='submit' >submit</button>
-                    </form> */}
-                    {/* <button type='submit' onClick={()=>setTest(test => test+1)}>ADD</button> */}
-                    <button type='submit' onClick={()=>trigger()}>Alert</button>
+                <div>
+                    
+                </div>
+                
+                    <ProgressBar
+                        isEnabled
+                        direction={Direction.HORIZONTAL}
+                        value={progressState / vidDuration.current}
+                        onChange={value => player.current.seekTo(value * vidDuration.current)}
+                    />
+
+                    <button type='submit' onClick={()=>playPause()}>{playing === true ? "Pause" : "Play"}</button>
+                    <button type='submit' onClick={()=>trigger()}>Mark as Ready!</button>
                 </div>
             :
                 <div>Nope</div>
