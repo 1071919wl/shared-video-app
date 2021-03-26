@@ -10,13 +10,12 @@ const Account = () => {
 
     const [title, setTitle] = useState('');
     const [videoFile, setVideoFile] = useState(null);
-
     const user_id = useSelector(state => state.session.id);
     const allClips = useSelector(state => state.entities.clips);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        // dispatch(fetchClips());
+        dispatch(fetchClips());
     }, [])
 
     const handleSubmit = (e) => {
@@ -52,19 +51,6 @@ const Account = () => {
                 </div>
             )
         }
-        
-        // clips.map((clip) => {
-        //     return(
-                // <div key={clip.id}>
-                //     {clip.title}
-                //     <div key={clip.id}>
-                //         <Link to={`/clip/${clip.id}`}>
-                //             <video type="video/mp4" src={clip.video_clip} width="400" height="auto" />
-                //         </Link>
-                //     </div>
-                // </div>
-        //     )
-        // })
     }
 
     return (

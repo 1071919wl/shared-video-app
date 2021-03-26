@@ -2,7 +2,7 @@ import React from "react";
 import { Direction, Slider } from 'react-player-controls'
  
 const WHITE_SMOKE = '#eee'
-const GRAY = '#878c88'
+const GRAY = '#454b46'
 const GREEN = '#72d687'
  
 // A colored bar that will represent the current value
@@ -55,13 +55,13 @@ const SliderHandle = ({ direction, value, style }) => (
 )
  
 // A composite progress bar component
-const ProgressBar = ({ isEnabled, direction, value, ...props }) => (
+const ProgressBar = ({ isEnabled, direction, value, type, ...props }) => (
   <Slider
     isEnabled={isEnabled}
     direction={direction}
     // onChange={/* store value somehow */}
     style={{
-      width: direction === Direction.HORIZONTAL ? 200 : 8,
+      width: direction === Direction.HORIZONTAL && type !== 'volume' ? 500 : 230,
       height: direction === Direction.HORIZONTAL ? 8 : 130,
       borderRadius: 4,
       background: WHITE_SMOKE,

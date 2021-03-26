@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchClips } from '../../actions/clip_actions';
 import NavBar from '../nav/navbar';
@@ -11,7 +11,7 @@ const Clip = () => {
     const allClips = useSelector(state => state.entities.clips);
     
     useEffect(() => {
-        // dispatch(fetchClips())
+        dispatch(fetchClips())
     }, [])
 
     return (

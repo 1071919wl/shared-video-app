@@ -32,6 +32,8 @@ const ClipLoad = ({channel}) => {
 
         return () => {
             channel.unbind();
+            pusher.unsubscribe(channel)
+            pusher.disconnect()
         };
     }, []);
 
