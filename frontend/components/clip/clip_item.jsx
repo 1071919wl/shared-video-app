@@ -5,10 +5,10 @@ import ReactPlayer from 'react-player';
 import { Direction } from 'react-player-controls';
 import ProgressBar from './progress_bar'
 import NavBar from '../nav/navbar';
-
+import ModalContainer from '../modal/modal_container';
+import { openModal } from '../../actions/modal_actions';
 
 const ClipItem = (props) => {
-    const [connect, setConnect] = useState('Waiting for party to connect...')
     const [channelState, setChannelState]= useState(null);
     const [playing, setPlaying]= useState(false);
     const [progressState, setProgressState]= useState(0);
@@ -18,30 +18,29 @@ const ClipItem = (props) => {
     const socketId = useRef();
 
 
-
+    //react-redux-hook
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
     const dispatch = useDispatch();
     
     //componentdidmount
     useEffect(() => {
+        dispatch(openModal('clipLoad'))
         dispatch(fetchClip(props.match.params.id))
     }, [])
 
 
     //subscribing
     useEffect(() => {
-
-        Pusher.logToConsole = true;
+        //prevents logger in production
+        if (process.env.NODE_ENV !== "production") {
+            Pusher.logToConsole = true;
+        }
+        
 
         var pusher = new Pusher('4efa8992028154c12bf1', {
             cluster: 'us3',
             authEndpoint: '/pusher/auth',
             encrypted: true,
-            // auth: {
-            //     headers: {
-            //     'X-CSRF-Token': "<%= form_authenticity_token %>"
-            //     }
-            // }
         });
 
         //gets socketid variable
@@ -70,10 +69,6 @@ const ClipItem = (props) => {
                 setPlaying(data.play)
             }
         });
-        
-        channel.bind('client-ready', (data) => {
-            setConnect(data.connect);
-        });
 
         channel.bind('client-seek', (data) => {
             player.current.seekTo(data.seek)
@@ -85,12 +80,6 @@ const ClipItem = (props) => {
             pusher.disconnect()
         };
     }, []);
-
-
-
-    const trigger = () => {
-        channelState.trigger('client-ready', { connect: 'Party is Ready!' })
-    }
 
     const playPause = () => {
         if(playing === true){
@@ -120,15 +109,16 @@ const ClipItem = (props) => {
     }
     
 
-
-
     return (
         <div>
             <NavBar />
+            <ModalContainer/>
+            <div>
+                Clip Item Show
+            </div>
+
             {clip !== undefined ?
                 <div>
-                    Clip Item Show
-                    {connect}
                     <div>
                         <h1>{clip.title}</h1>
                         <ReactPlayer url={clip.video_clip} ref={player} onProgress={onProgress} onDuration={onDuration} playing={playing} onSeek={onSeek}  />
@@ -145,10 +135,10 @@ const ClipItem = (props) => {
                     />
 
                     <button type='submit' onClick={()=>playPause()}>{playing === true ? "Pause" : "Play"}</button>
-                    <button type='submit' onClick={()=>trigger()}>Mark as Ready!</button>
+                    
                 </div>
             :
-                <div>Nope</div>
+                <div></div>
             }
         </div>
     )

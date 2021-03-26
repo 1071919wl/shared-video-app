@@ -16,7 +16,7 @@ const Account = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchClips());
+        // dispatch(fetchClips());
     }, [])
 
     const handleSubmit = (e) => {

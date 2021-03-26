@@ -11,10 +11,8 @@ const Clip = () => {
     const allClips = useSelector(state => state.entities.clips);
     
     useEffect(() => {
-        dispatch(fetchClips())
-        console.log(allClips)
+        // dispatch(fetchClips())
     }, [])
-    // const currentUser = useSelector(state => state.session.user);
 
     return (
         <div>

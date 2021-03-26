@@ -35593,3 +35593,1814 @@ Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaM
 Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
 
 
+Started GET "/" for ::1 at 2021-03-26 10:25:47 -0700
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (32.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (104.9ms)
+Started GET "/" for ::1 at 2021-03-26 10:25:50 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (26.2ms)
+Started GET "/" for ::1 at 2021-03-26 10:25:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.9ms)
+Started GET "/" for ::1 at 2021-03-26 10:25:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 15402ms (Views: 15328.1ms | ActiveRecord: 69.9ms)
+
+
+Completed 200 OK in 13273ms (Views: 13260.0ms | ActiveRecord: 10.5ms)
+
+
+Completed 200 OK in 11421ms (Views: 11417.1ms | ActiveRecord: 1.6ms)
+
+
+Completed 200 OK in 8656ms (Views: 8650.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:26:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 72ms (Views: 65.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:26:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 85ms (Views: 73.9ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:26:40 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16182635", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:29:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 754ms (Views: 747.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:29:18 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16181430", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:36:47 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (3.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 1270ms (Views: 1253.3ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:36:50 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16185579", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:36:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:36:55 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16188432", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:37:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 128ms (Views: 112.3ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:37:10 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1796.53536993", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 8ms (Views: 0.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-26 10:37:14 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (45.6ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (18.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (7.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (252.9ms)
+Completed 200 OK in 277ms (Views: 143.2ms | ActiveRecord: 119.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 10:37:14 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-26 10:37:14 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (12.4ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173715Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12ab82208790e5e9fd81479e1a6e5c03b15db810badf9ff8aeefa868ee0b891b)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173715Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12ab82208790e5e9fd81479e1a6e5c03b15db810badf9ff8aeefa868ee0b891b
+Completed 302 Found in 22ms (ActiveRecord: 2.5ms)
+
+
+[36m  S3 Storage (12.5ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173715Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b8853c380b3b5c97504fd31a1abaaa61ced550d99d6a09b8550b6bf4b6d2b412)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173715Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b8853c380b3b5c97504fd31a1abaaa61ced550d99d6a09b8550b6bf4b6d2b412
+Completed 302 Found in 26ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 10:37:18 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-26 10:37:18 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Processing by ActiveStorage::BlobsController#show as MP4
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.6ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173718Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bd24346765463b5d31c646a37177bc4e1263896fdd70860fdb8af72284052cbb)[0m
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173718Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bd24346765463b5d31c646a37177bc4e1263896fdd70860fdb8af72284052cbb
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.1ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173718Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6a43de496355167ae6eb139f7d6eaab33e53c1430b2110de1f86c74f2e2c5ea0)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173718Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6a43de496355167ae6eb139f7d6eaab33e53c1430b2110de1f86c74f2e2c5ea0
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:37:24 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16190942", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:37:31 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 646ms (Views: 641.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:37:33 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16191016", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:38:21 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 674ms (Views: 667.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 10:38:22 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (3.8ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (25.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (35.8ms)
+Completed 200 OK in 68ms (Views: 34.1ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 10:38:23 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (4.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.8ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173823Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f0376811b014e6109f33df3dd49d3843fe0b4f626f6dd07a5cb563a3396dcba6)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T173823Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f0376811b014e6109f33df3dd49d3843fe0b4f626f6dd07a5cb563a3396dcba6
+Completed 302 Found in 10ms (ActiveRecord: 4.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:38:23 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16189229", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:39:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 623ms (Views: 618.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 10:39:42 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (13.3ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (35.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (69.9ms)
+Completed 200 OK in 111ms (Views: 51.7ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:46:12 -0700
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (243.5ms)
+Started GET "/" for ::1 at 2021-03-26 10:46:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 6042ms (Views: 5896.3ms | ActiveRecord: 134.4ms)
+
+
+Completed 200 OK in 3326ms (Views: 3316.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:46:30 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:46:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 70ms (Views: 63.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:47:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 66ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:49:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 1231ms (Views: 1214.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:49:58 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16195208", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:53:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 809ms (Views: 801.9ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:53:15 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16196898", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (31.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:56:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 666ms (Views: 660.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:56:24 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1797.53981931", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 10:57:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 785ms (Views: 777.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:57:39 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53983877", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+Started POST "/pusher/auth" for ::1 at 2021-03-26 10:57:39 -0700
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16199373", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:01:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 937ms (Views: 923.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:01:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (23.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (75.8ms)
+Completed 200 OK in 240ms (Views: 212.5ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:03:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 756ms (Views: 751.2ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:03:28 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1797.53985686", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:05:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 881ms (Views: 874.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:05:32 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1883.16199307", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:05:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 241ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-26 11:05:52 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"billy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (15.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "billy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[35m (8.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "billy"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Update (20.4ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["updated_at", "2021-03-26 18:05:53.059746"], ["id", 3]]
+  ↳ app/models/user.rb:57
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:57
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered api/users/show.json.jbuilder (3.8ms)
+Completed 200 OK in 377ms (Views: 14.5ms | ActiveRecord: 50.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:05:58 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16206035", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:07:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.7ms)
+Started GET "/" for ::1 at 2021-03-26 11:07:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (31.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 3326ms (Views: 3315.5ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 1359ms (Views: 1323.3ms | ActiveRecord: 31.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:07:18 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53988971", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:07:19 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53973966", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:07:37 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 85ms (Views: 80.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:07:38 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1796.53553084", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "_oXH29udTmNuxkilssiZ2A"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:09:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (4.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 1463ms (Views: 1434.3ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:10:00 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53990362", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:10:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 228ms (Views: 218.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:10:26 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16205874", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (21.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:10:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 741ms (Views: 737.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:10:29 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53975587", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:13:45 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (81.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (111.4ms)
+Completed 200 OK in 1524ms (Views: 1435.6ms | ActiveRecord: 81.7ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:13:49 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1884.16209600", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:14:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 1348ms (Views: 1340.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:14:09 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53992457", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:14:13 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 468ms (Views: 461.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:14:15 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1796.53556457", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:14:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 1231ms (Views: 1219.2ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:14:44 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1795.53578459", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:14:58 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 617ms (Views: 612.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:15:00 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53992880", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:16:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 960ms (Views: 955.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:16:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:16:38 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16211492", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Completed 200 OK in 228ms (Views: 221.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:16:40 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16209056", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:19:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 1426ms (Views: 1420.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:19:39 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16210557", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:19:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 1197ms (Views: 1190.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:19:54 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16210692", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:20:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 720ms (Views: 714.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:20:28 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53980678", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:20:34 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 116ms (Views: 111.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:20:35 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16213491", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (23.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 23.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:39:50 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1795.53591273", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 30ms (Views: 2.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:39:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 925ms (Views: 908.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:39:54 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (9.3ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (31.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (266.2ms)
+Completed 200 OK in 444ms (Views: 223.8ms | ActiveRecord: 165.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:39:55 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1883.16216844", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:39:55 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (11.8ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T183955Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3a1fb1799b8d99190f6ecb73de6924ff4cc18c8bef07df81ca889b55689a4083)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T183955Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3a1fb1799b8d99190f6ecb73de6924ff4cc18c8bef07df81ca889b55689a4083
+Completed 302 Found in 26ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:40:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 145ms (Views: 141.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-26 11:40:13 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"billy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "billy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "billy"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Update (17.0ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["updated_at", "2021-03-26 18:40:13.745860"], ["id", 3]]
+  ↳ app/models/user.rb:57
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:57
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered api/users/show.json.jbuilder (2.1ms)
+Completed 200 OK in 340ms (Views: 11.8ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:40:20 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (27.0ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (13.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (27.6ms)
+Completed 200 OK in 70ms (Views: 24.9ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:40:20 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.3ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184020Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1e607c08cb71518a53b992fd2bb480057511a115263fc57fc8ca149eef93fd1b)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184020Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1e607c08cb71518a53b992fd2bb480057511a115263fc57fc8ca149eef93fd1b
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:40:21 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1795.53591528", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:41:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 136ms (Views: 129.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:41:52 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (2.5ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (41.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (13.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (103.2ms)
+Completed 200 OK in 149ms (Views: 68.5ms | ActiveRecord: 58.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:41:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 273ms (Views: 267.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:41:53 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.4ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184153Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6a19601479bce142d3b9458c6469fa85e390bcfd2c801cad99c371384b030520)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184153Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6a19601479bce142d3b9458c6469fa85e390bcfd2c801cad99c371384b030520
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:41:53 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1794.53584039", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:41:54 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (19.1ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (19.1ms)
+Completed 200 OK in 57ms (Views: 32.3ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:41:54 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0a835685d9673049fbaf30717b05c9cad2db4bba8ce15bca71653a8f040fd14c)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0a835685d9673049fbaf30717b05c9cad2db4bba8ce15bca71653a8f040fd14c
+Completed 302 Found in 11ms (ActiveRecord: 1.3ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:41:54 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1794.53584057", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:44:18 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 1041ms (Views: 1034.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:44:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 232ms (Views: 225.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:44:21 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (15.3ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (6.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (24.7ms)
+Completed 200 OK in 56ms (Views: 28.7ms | ActiveRecord: 25.5ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:44:21 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (31.7ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (9.8ms)
+Completed 200 OK in 66ms (Views: 30.3ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:44:22 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (7.6ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184422Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ac0f78b06cd593e9f89adfc65e8c7db898ecbe3bd993fce797aaf51b1dde498)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184422Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ac0f78b06cd593e9f89adfc65e8c7db898ecbe3bd993fce797aaf51b1dde498
+Completed 302 Found in 16ms (ActiveRecord: 0.9ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:44:22 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53992818", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:44:22 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53992810", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:44:22 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184422Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ac0f78b06cd593e9f89adfc65e8c7db898ecbe3bd993fce797aaf51b1dde498)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184422Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ac0f78b06cd593e9f89adfc65e8c7db898ecbe3bd993fce797aaf51b1dde498
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:45:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 1230ms (Views: 1220.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:45:18 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (26.4ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (12.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (3.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (43.8ms)
+Completed 200 OK in 94ms (Views: 45.1ms | ActiveRecord: 43.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:45:19 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.9ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184519Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3386d7c33cff3e05dcfcf330b1b2e94b9226a3b989aa307a722591d63949162b)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184519Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3386d7c33cff3e05dcfcf330b1b2e94b9226a3b989aa307a722591d63949162b
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:45:19 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16223803", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (9.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:45:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 1496ms (Views: 1481.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:45:22 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.6ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (7.3ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:45:22 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (4.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.6ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184522Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=630fcd899374ef2c29703e9dcc38802b821bcb07dc04cc52d658f6c45dbaca8b)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184522Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=630fcd899374ef2c29703e9dcc38802b821bcb07dc04cc52d658f6c45dbaca8b
+Completed 302 Found in 11ms (ActiveRecord: 4.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:45:22 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.54008307", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:46:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 830ms (Views: 824.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:46:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (14.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 310ms (Views: 281.2ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:46:53 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (5.7ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (3.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (13.3ms)
+Completed 200 OK in 40ms (Views: 25.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:46:54 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (1.1ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (7.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:46:54 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184654Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b61e96e6fdd3a8f733da1684d9df3bb00864ed0f8b1e790ba65c4178cdc1c03c)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184654Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b61e96e6fdd3a8f733da1684d9df3bb00864ed0f8b1e790ba65c4178cdc1c03c
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:46:54 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53994063", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 8ms (Views: 1.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:46:55 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (30.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.1ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184655Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e98697488e0b963807c9ce7c37775ba435aff16146f7cab31dda339edd9741a8)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184655Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e98697488e0b963807c9ce7c37775ba435aff16146f7cab31dda339edd9741a8
+Completed 302 Found in 35ms (ActiveRecord: 30.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:46:55 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16224577", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:48:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (2.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 1499ms (Views: 1491.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:48:32 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (15.1ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (9.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (38.6ms)
+Completed 200 OK in 106ms (Views: 56.0ms | ActiveRecord: 43.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:48:32 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (21.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.8ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184832Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=59788b3f3764a34debf2617c9883dd40f4e816b02cff323b12dbf386fb3f8275)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184832Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=59788b3f3764a34debf2617c9883dd40f4e816b02cff323b12dbf386fb3f8275
+Completed 302 Found in 28ms (ActiveRecord: 21.6ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:48:33 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (28.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (46.1ms)
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:48:33 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16222549", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 398ms (Views: 364.0ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:48:35 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (2.2ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (5.2ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:48:36 -0700
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:48:36 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16225425", "channel_name"=>"private-my-channel-will"}
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (4.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.5ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184836Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=43d976776925cb0cbe98e3ab9ae4fdf3f68a219c0ffd78c43773386a9237ca35)[0m
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 16.4ms)
+
+
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T184836Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=43d976776925cb0cbe98e3ab9ae4fdf3f68a219c0ffd78c43773386a9237ca35
+Completed 302 Found in 20ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:51:27 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.7ms)
+Started GET "/" for ::1 at 2021-03-26 11:51:28 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (34.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 1708ms (Views: 1702.7ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 1219ms (Views: 1181.2ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:51:30 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (2.3ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (121.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (135.3ms)
+Completed 200 OK in 165ms (Views: 37.0ms | ActiveRecord: 126.0ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:51:30 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (2.0ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (10.4ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:51:31 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.1ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185131Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9f6c20e2782a046f61e5494c70435899ce66e6171469d58f98ef61f66d7b392a)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185131Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=9f6c20e2782a046f61e5494c70435899ce66e6171469d58f98ef61f66d7b392a
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:31 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.54011337", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 16.9ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:31 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16224013", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:51:32 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (10.6ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185132Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=036ed3fb50bf50fabb4aacbcbb599cfcc4bcbcf1aabd056d9215718eafdeddfc)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185132Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=036ed3fb50bf50fabb4aacbcbb599cfcc4bcbcf1aabd056d9215718eafdeddfc
+Completed 302 Found in 17ms (ActiveRecord: 1.0ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:32 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1888.16229108", "channel_name"=>"private-my-channel-will"}
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:32 -0700
+  [1m[36mUser Load (20.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1794.53588820", "channel_name"=>"private-my-channel-will"}
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 27ms (Views: 0.6ms | ActiveRecord: 20.2ms)
+
+
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:51:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 267ms (Views: 260.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:51:52 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 325ms (Views: 320.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:51:53 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (25.4ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (8.4ms)
+Completed 200 OK in 51ms (Views: 20.7ms | ActiveRecord: 28.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:51:54 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.1ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=93b0445f631d5af228a751021542434413e0d486fe48b766254526eb9e1fb65f)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=93b0445f631d5af228a751021542434413e0d486fe48b766254526eb9e1fb65f
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:51:54 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.6ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (9.9ms)
+Completed 200 OK in 28ms (Views: 22.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:51:54 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=93b0445f631d5af228a751021542434413e0d486fe48b766254526eb9e1fb65f)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185154Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=93b0445f631d5af228a751021542434413e0d486fe48b766254526eb9e1fb65f
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:54 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16224200", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:55 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1883.16222773", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 16.1ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:55 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16227048", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:51:56 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1885.16226817", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:53:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 786ms (Views: 776.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:53:10 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (24.8ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (7.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (9.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (23.8ms)
+Completed 200 OK in 76ms (Views: 32.1ms | ActiveRecord: 41.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:53:10 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (5.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.3ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185310Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ac5ab235eceeb95d3083619b0b9ec4f7bc14ef7a093b118ea96033915b042760)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185310Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ac5ab235eceeb95d3083619b0b9ec4f7bc14ef7a093b118ea96033915b042760
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:53:11 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1795.53597831", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:53:11 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1796.53576101", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:53:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (71.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 1038ms (Views: 962.3ms | ActiveRecord: 71.2ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:53:14 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (21.9ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (10.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (18.7ms)
+Completed 200 OK in 71ms (Views: 32.0ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:53:14 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.0ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0635f83d9e4d098d5015d558d1617e8cddb0ebb9f844b0c4ef9c35b82a06db7f)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185314Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0635f83d9e4d098d5015d558d1617e8cddb0ebb9f844b0c4ef9c35b82a06db7f
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:53:14 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1884.16229500", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:53:14 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.16224842", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:53:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 1061ms (Views: 1053.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:53:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 1212ms (Views: 1207.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 90ms (Views: 86.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:02 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 189ms (Views: 183.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:21 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 230ms (Views: 220.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 95ms (Views: 87.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:26 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 611ms (Views: 607.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:54:27 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (11.0ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (32.3ms)
+Completed 200 OK in 109ms (Views: 90.1ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:54:27 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (4.5ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185427Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d52d75079f2ea41a7927c8c477f81ffd1974d340b1780d1a9c0ca5c27b331237)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185427Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d52d75079f2ea41a7927c8c477f81ffd1974d340b1780d1a9c0ca5c27b331237
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:54:27 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1794.53590250", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:54:28 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1795.53598460", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (8.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2lZHY_-8YmHDuLhuskhMhA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/" for ::1 at 2021-03-26 11:54:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (40.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 269ms (Views: 225.2ms | ActiveRecord: 40.4ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-26 11:54:30 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.6ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (26.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (41.7ms)
+Completed 200 OK in 73ms (Views: 43.9ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-26 11:54:31 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (4.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185431Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5e4e1a0f3f2b56d4391816e588f3ff1b1bbd5653e5d5c216a58ba2007b886315)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T185431Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=5e4e1a0f3f2b56d4391816e588f3ff1b1bbd5653e5d5c216a58ba2007b886315
+Completed 302 Found in 11ms (ActiveRecord: 4.6ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:54:31 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.16228320", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (14.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 14.9ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-26 11:54:31 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1794.53590280", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (56.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "KLmpqYfCWnn2ujSXy84Qnw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 59ms (Views: 0.4ms | ActiveRecord: 56.8ms)
+
+
