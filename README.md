@@ -1,7 +1,7 @@
 # README
 Hi there! This is a bare bone skeleton app for real-time video viewing.
 
-[Trustero Todo App](https://queue-video-share.herokuapp.com/#/) 
+[Queue Video Sharing App](https://queue-video-share.herokuapp.com/#/) 
 
 ### Features
 * Upload video clips
