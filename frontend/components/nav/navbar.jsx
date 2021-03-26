@@ -37,7 +37,7 @@ const NavBar = (props) => {
         <div className='navbar-container'>
             <div className='nav-header-bar'>
                 <div className='left-navbar'>    
-                    <Link to={'/clip'}>
+                    <Link to={'/'}>
                         <div className='brand-navbar'>Queue</div>
                     </Link>
                 </div>
