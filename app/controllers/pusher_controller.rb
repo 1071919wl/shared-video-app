@@ -1,6 +1,7 @@
 require 'pusher'
 class PusherController < ApplicationController
-  skip_before_action :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
+  protect_from_forgery :except => :auth
 
   def auth
     if current_user

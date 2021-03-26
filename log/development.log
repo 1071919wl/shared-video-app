@@ -34906,3 +34906,477 @@ Processing by Api::ClipsController#index as JSON
 Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/" for ::1 at 2021-03-25 22:41:38 -0700
+  [1m[35m (253.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (502.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (25.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (2427.4ms)
+Started GET "/" for ::1 at 2021-03-25 22:42:22 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (51.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (77.9ms)
+Started GET "/" for ::1 at 2021-03-25 22:42:24 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41353ms (Views: 39853.8ms | ActiveRecord: 1451.8ms)
+
+
+Completed 200 OK in 16735ms (Views: 16728.7ms | ActiveRecord: 2.4ms)
+
+
+Completed 200 OK in 17779ms (Views: 17712.8ms | ActiveRecord: 51.8ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-25 22:43:07 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (1847.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (326.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (263.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (22060.2ms)
+Completed 200 OK in 28198ms (Views: 16799.3ms | ActiveRecord: 5622.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-25 22:43:38 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (20.0ms)
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 22:43:38 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 22:43:38 -0700
+Completed 200 OK in 2992ms (Views: 2978.7ms | ActiveRecord: 0.8ms)
+
+
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (143.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (147.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Started GET "/api/clips" for ::1 at 2021-03-25 22:43:44 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (133.0ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (161.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (433.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (527.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+[36m  S3 Storage (3846.5ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054348Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b9d2ecdfcc348dd0b4804c8a2e34326f9ccf0232bc022703a3ad5a19de8ebf39)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054348Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=b9d2ecdfcc348dd0b4804c8a2e34326f9ccf0232bc022703a3ad5a19de8ebf39
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+Completed 302 Found in 4390ms (ActiveRecord: 147.0ms)
+
+
+[36m  S3 Storage (3910.6ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054348Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=657ae351be29fb3b4cec97b34dfec1873ed15030e8046f8a4dcbfe5f9df7ddef)[0m
+  Rendered api/clips/index.json.jbuilder (2219.9ms)
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054348Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=657ae351be29fb3b4cec97b34dfec1873ed15030e8046f8a4dcbfe5f9df7ddef
+Completed 200 OK in 3003ms (Views: 1745.8ms | ActiveRecord: 1256.3ms)
+
+
+Completed 302 Found in 4399ms (ActiveRecord: 143.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 22:43:49 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 22:43:49 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.3ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054349Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ff51360a22fbe6db1f93a51794d51015a43f8054000863ef603a8848fdc70174)[0m
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054349Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2eb73c762dad3f44b4d851198acc66beb01637ad827a3fc98fe1395871ce78e4)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054349Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ff51360a22fbe6db1f93a51794d51015a43f8054000863ef603a8848fdc70174
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054349Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2eb73c762dad3f44b4d851198acc66beb01637ad827a3fc98fe1395871ce78e4
+Completed 302 Found in 69ms (ActiveRecord: 0.8ms)
+
+
+Completed 302 Found in 32ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-25 22:44:27 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (552.0ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (165.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (188.1ms)
+Completed 200 OK in 1495ms (Views: 750.8ms | ActiveRecord: 717.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-25 22:44:34 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1798.53730564", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 64ms (Views: 1.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-25 22:46:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (360.8ms)
+Completed 200 OK in 6606ms (Views: 6556.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-25 22:47:04 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"billy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1775.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "billy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[35m (195.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (108.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "billy"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "BNSIdn08c6ETXF71GM6Qtg"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Update (818.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "BNSIdn08c6ETXF71GM6Qtg"], ["updated_at", "2021-03-26 05:47:12.523244"], ["id", 3]]
+  ↳ app/models/user.rb:57
+  [1m[35m (192.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:57
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (2.3ms)
+  Rendered api/users/show.json.jbuilder (26.6ms)
+Completed 200 OK in 5522ms (Views: 458.5ms | ActiveRecord: 3090.2ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-25 22:47:14 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (39.6ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (74.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (225.0ms)
+Completed 200 OK in 282ms (Views: 154.0ms | ActiveRecord: 121.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 22:47:23 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (72.1ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054723Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1dcc98ae2695c5be789c3268bc22d356841407185511f4042c6a9e4638369e6d)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054723Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=1dcc98ae2695c5be789c3268bc22d356841407185511f4042c6a9e4638369e6d
+Completed 302 Found in 121ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 22:47:24 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.4ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054724Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3a112f271d1c3e09280db35769f3bec37718164dfca299b94bb0a6dc8c4555a8)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T054724Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=3a112f271d1c3e09280db35769f3bec37718164dfca299b94bb0a6dc8c4555a8
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-25 22:47:35 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (100.9ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (168.4ms)
+Completed 200 OK in 1395ms (Views: 418.3ms | ActiveRecord: 102.2ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-25 22:47:37 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.15961546", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (46.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BNSIdn08c6ETXF71GM6Qtg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 158ms (Views: 0.4ms | ActiveRecord: 46.5ms)
+
+
+Started GET "/" for ::1 at 2021-03-25 23:03:08 -0700
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (42.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (125.1ms)
+Completed 200 OK in 4714ms (Views: 4643.3ms | ActiveRecord: 65.1ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-25 23:03:15 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (2.8ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (208.9ms)
+Completed 200 OK in 250ms (Views: 132.9ms | ActiveRecord: 86.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 23:03:16 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:03:16 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (24.0ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060316Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7298c84f146a9295c5356346a6640c2cb5f1d854950acc9d9257b0c3ef620438)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060316Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7298c84f146a9295c5356346a6640c2cb5f1d854950acc9d9257b0c3ef620438
+Completed 302 Found in 30ms (ActiveRecord: 0.5ms)
+
+
+[36m  S3 Storage (25.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060316Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=745bd22df3ff7fe0a3858dc676a85dde1822e4d84e68c907e0aaeff3f4273419)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060316Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=745bd22df3ff7fe0a3858dc676a85dde1822e4d84e68c907e0aaeff3f4273419
+Completed 302 Found in 34ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-25 23:03:21 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (1.2ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (8.7ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:03:21 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (2.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.7ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060321Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f5d65de5d388ac0c3451ddb294626b57b934321ee7bb84fb38dad56812ed3ef4)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060321Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f5d65de5d388ac0c3451ddb294626b57b934321ee7bb84fb38dad56812ed3ef4
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-25 23:03:21 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1886.15962697", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-25 23:03:46 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (0.8ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (102.4ms)
+Completed 200 OK in 122ms (Views: 93.3ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:03:46 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 23:03:46 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (5.5ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060346Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=908fe2ce8ec406e617b25fe9db5743fca4851c617c24661a990d17041260aa97)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060346Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=908fe2ce8ec406e617b25fe9db5743fca4851c617c24661a990d17041260aa97
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms)
+
+
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.8ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060346Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f6951ec4b576e6bd308bf60f382e361a24e74ddf7bbc2de5c8d3b3b255294644)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060346Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f6951ec4b576e6bd308bf60f382e361a24e74ddf7bbc2de5c8d3b3b255294644
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2021-03-25 23:03:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 3604ms (Views: 3600.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/session" for ::1 at 2021-03-25 23:04:09 -0700
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"username"=>"billy", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "billy"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "billy"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "l5PEA7yR5UdU3QMO81ITzg"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/models/user.rb:57
+  [1m[36mUser Update (8.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "l5PEA7yR5UdU3QMO81ITzg"], ["updated_at", "2021-03-26 06:04:10.192847"], ["id", 3]]
+  ↳ app/models/user.rb:57
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:57
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (1.1ms)
+  Rendered api/users/show.json.jbuilder (6.7ms)
+Completed 200 OK in 356ms (Views: 25.6ms | ActiveRecord: 39.7ms)
+
+
+Started GET "/api/clips" for ::1 at 2021-03-25 23:04:10 -0700
+Processing by Api::ClipsController#index as JSON
+  Rendering api/clips/index.json.jbuilder
+  [1m[36mClip Load (0.9ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/api/clips/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/clips/index.json.jbuilder:3
+  Rendered api/clips/index.json.jbuilder (22.9ms)
+Completed 200 OK in 59ms (Views: 51.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:04:10 -0700
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883/Taiga_escape.mp4" for ::1 at 2021-03-25 23:04:10 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e9dffc686c2e1894aca8dea4092565c00ae0883", "filename"=>"Taiga_escape"}
+  [1m[36mActiveStorage::Blob Load (19.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (37.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.1ms) [0m[34mGenerated URL for file at key: stfjwmntaMtrYMfwhjnYe1BS (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060410Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=cc5098d0e191f0c1a7e9d111b18d7f7b41b9862717a78353927a25e8f6533f5c)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/stfjwmntaMtrYMfwhjnYe1BS?response-content-disposition=attachment%3B%20filename%3D%22Taiga_escape.mp4%22%3B%20filename%2A%3DUTF-8%27%27Taiga_escape.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060410Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=cc5098d0e191f0c1a7e9d111b18d7f7b41b9862717a78353927a25e8f6533f5c
+Completed 302 Found in 76ms (ActiveRecord: 19.2ms)
+
+
+[36m  S3 Storage (2.0ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060410Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7ab0e03642e815dbdf1129956fbe669cae918c7fb25b7ea0d63faebee00e38b7)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060410Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7ab0e03642e815dbdf1129956fbe669cae918c7fb25b7ea0d63faebee00e38b7
+Completed 302 Found in 99ms (ActiveRecord: 37.3ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-25 23:04:13 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (9.4ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:04:13 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.5ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060413Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2a769dcb4c48f8d835d314928a86dd0868c19d9f5008990048f5bee9e855f7a1)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060413Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2a769dcb4c48f8d835d314928a86dd0868c19d9f5008990048f5bee9e855f7a1
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-25 23:04:13 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1887.15965527", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "l5PEA7yR5UdU3QMO81ITzg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/clips/1" for ::1 at 2021-03-25 23:04:15 -0700
+Processing by Api::ClipsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (1.1ms)[0m  [1m[34mSELECT  "clips".* FROM "clips" WHERE "clips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/clips_controller.rb:26
+  Rendering api/clips/show.json.jbuilder
+  [1m[36mActiveStorage::Attachment Load (4.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Clip"], ["name", "video_clip"], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/api/clips/show.json.jbuilder:1
+  Rendered api/clips/show.json.jbuilder (12.9ms)
+Completed 200 OK in 30ms (Views: 21.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89/shadow_fiend.mp4" for ::1 at 2021-03-25 23:04:15 -0700
+Processing by ActiveStorage::BlobsController#show as MP4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--812114d8ff63c001ddd7e01e97d4b2fd31a1ff89", "filename"=>"shadow_fiend"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/codingCoding/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.6ms) [0m[34mGenerated URL for file at key: qCWuF8izS9qZTSoQwvEHRVcC (https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060415Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ec18bff3bd6a81fe11b2207d2ea62a1141ac3a3a2723efdf70380c659f10fdc)[0m
+Redirected to https://shared-video-app-dev.s3.us-west-1.amazonaws.com/qCWuF8izS9qZTSoQwvEHRVcC?response-content-disposition=attachment%3B%20filename%3D%22shadow_fiend.mp4%22%3B%20filename%2A%3DUTF-8%27%27shadow_fiend.mp4&response-content-type=video%2Fmp4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWNGYA6HVBAC2ZFHI%2F20210326%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210326T060415Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0ec18bff3bd6a81fe11b2207d2ea62a1141ac3a3a2723efdf70380c659f10fdc
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/pusher/auth" for ::1 at 2021-03-25 23:04:15 -0700
+Processing by PusherController#auth as */*
+  Parameters: {"socket_id"=>"1799.53750172", "channel_name"=>"private-my-channel-will"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "g0q8w8geThuak74ZDwfTBA"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
