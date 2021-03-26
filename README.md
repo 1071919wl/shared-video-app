@@ -1,24 +1,19 @@
 # README
+Hi there! This is a bare bone skeleton app for real-time video viewing.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Trustero Todo App](https://queue-video-share.herokuapp.com/#/) 
 
-Things you may want to cover:
+### Features
+* Upload video clips
+* View clips real time with other party members
 
-* Ruby version
+### Technologies
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby
+* Ruby on Rails
+* Postgresql
+* React
+* Redux
+* Pusher
+* React Player
+* AWS S3
