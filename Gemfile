@@ -41,11 +41,10 @@ group :development, :test do
   gem 'annotate' # "bundle exec annotate --models" to use
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'byebug'
   gem 'pry-rails'
-  gem 'jquery-rails'
   gem 'pusher'
   gem 'figaro'
+  gem 'jquery-rails'
 end
 
 group :development do
