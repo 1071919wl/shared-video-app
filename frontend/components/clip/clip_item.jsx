@@ -22,6 +22,10 @@ const ClipItem = (props) => {
 
 
 
+    const [userId, setUserId]= useState("pendingUser");
+    const [userInfo, setUserInfo]= useState("pendingInfo");
+    const[count, setCount] = useState(0)
+
     //react-redux-hook
     const clip = useSelector(state => Object.values(state.entities.clips)[0]);
     const dispatch = useDispatch();
@@ -56,8 +60,17 @@ const ClipItem = (props) => {
         })
 
         //client side will get auth then stores channel in state
-        const channel = pusher.subscribe("private-my-channel-will");
+        // const channel = pusher.subscribe("presence-my-channel-will");
+
+        var channel = pusher.subscribe('presence-my-channel-will');
+        channel.bind('pusher:subscription_succeeded', function() {
+        var me = channel.members.me;
+            setUserId(me.id);
+            setUserInfo(me.username);
+        });
         setChannelState(channel)
+        var count = channel.members.count;
+        setCount(count)
 
         // channel.bind('pusher:subscription_succeeded', () => {
         //     var triggered = channel.trigger('client-my-event', { message: 'CLIENT HAS JOINED' });
@@ -135,6 +148,8 @@ const ClipItem = (props) => {
             <div className='clip_item_container'>
                 <div>
                     Clip Item Show
+                    {userId}
+                    {userInfo}
                 </div>
 
                 {clip !== undefined ?
