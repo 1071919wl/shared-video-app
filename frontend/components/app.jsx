@@ -12,7 +12,6 @@ import ClipItem from './clip/clip_item'
 
 const App = () => {
 
-
     return (
         <div>
             <Switch>
